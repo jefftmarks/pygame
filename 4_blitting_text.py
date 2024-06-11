@@ -48,5 +48,5 @@ while running:
 		# Update the display
 		pygame.display.update()
 				
-#End the game
+# End the game
 pygame.quit()
