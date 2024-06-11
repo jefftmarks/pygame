@@ -37,16 +37,16 @@ custom_txt_rect.center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2 + 100)
 running = True
 while running:
     # Loop through list of event objects
-		for event in pygame.event.get():
-			if event.type == pygame.QUIT:
-				running = False
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			running = False
 
-		# Blit text surface
-		display_surface.blit(system_txt, system_txt_rect)
-		display_surface.blit(custom_txt, custom_txt_rect)
+	# Blit text surface
+	display_surface.blit(system_txt, system_txt_rect)
+	display_surface.blit(custom_txt, custom_txt_rect)
 
-		# Update the display
-		pygame.display.update()
+	# Update the display
+	pygame.display.update()
 				
 # End the game
 pygame.quit()

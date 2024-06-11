@@ -27,23 +27,23 @@ def map_dragon_to_mouse():
 running = True
 while running:
     # Loop through list of event objects
-		for event in pygame.event.get():
-				if event.type == pygame.QUIT:
-					running = False	
-				elif (
-					event.type == pygame.MOUSEBUTTONDOWN or
-					(event.type == pygame.MOUSEMOTION and event.buttons[0] == 1)
-                ):
-					map_dragon_to_mouse()
-					
-        # Fill the display
-		display_surface.fill((0, 0, 0))
+	for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				running = False	
+			elif (
+				event.type == pygame.MOUSEBUTTONDOWN or
+				(event.type == pygame.MOUSEMOTION and event.buttons[0] == 1)
+			):
+				map_dragon_to_mouse()
+				
+	# Fill the display
+	display_surface.fill((0, 0, 0))
 
-		# Blit assets
-		display_surface.blit(dragon_img, dragon_rect)
+	# Blit assets
+	display_surface.blit(dragon_img, dragon_rect)
 
-		# Update the display
-		pygame.display.update()
+	# Update the display
+	pygame.display.update()
 				
 # End the game
 pygame.quit()

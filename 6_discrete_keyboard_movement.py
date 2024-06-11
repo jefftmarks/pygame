@@ -22,30 +22,30 @@ dragon_rect.bottom = WINDOW_HEIGHT
 running = True
 while running:
     # Loop through list of event objects
-		for event in pygame.event.get():
-				if event.type == pygame.QUIT:
-					running = False
-				
-				# Check for discrete movement
-				if event.type == pygame.KEYDOWN:
-						match event.key:
-							case pygame.K_LEFT:
-								dragon_rect.x -= VELOCITY
-							case pygame.K_RIGHT:
-								dragon_rect.x += VELOCITY
-							case pygame.K_UP:
-								dragon_rect.y -= VELOCITY
-							case pygame.K_DOWN:
-								dragon_rect.y += VELOCITY
+	for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				running = False
+			
+			# Check for discrete movement
+			if event.type == pygame.KEYDOWN:
+					match event.key:
+						case pygame.K_LEFT:
+							dragon_rect.x -= VELOCITY
+						case pygame.K_RIGHT:
+							dragon_rect.x += VELOCITY
+						case pygame.K_UP:
+							dragon_rect.y -= VELOCITY
+						case pygame.K_DOWN:
+							dragon_rect.y += VELOCITY
 
-		# Fill the display surface to cover old images
-		display_surface.fill((0, 0, 0))
+	# Fill the display surface to cover old images
+	display_surface.fill((0, 0, 0))
 
-		# Blit assets
-		display_surface.blit(dragon_img, dragon_rect)
+	# Blit assets
+	display_surface.blit(dragon_img, dragon_rect)
 
-		# Update the display
-		pygame.display.update()
+	# Update the display
+	pygame.display.update()
 				
 # End the game
 pygame.quit()

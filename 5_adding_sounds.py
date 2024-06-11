@@ -37,12 +37,12 @@ pygame.mixer.music.stop()
 running = True
 while running:
     # Loop through list of event objects
-		for event in pygame.event.get():
-			if event.type == pygame.QUIT:
-				running = False
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			running = False
 
-		# Update the display
-		pygame.display.update()
+	# Update the display
+	pygame.display.update()
 				
 # End the game
 pygame.quit()

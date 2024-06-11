@@ -24,18 +24,18 @@ dragon_right_rect.topright = (WINDOW_WIDTH, 0)
 running = True
 while running:
     # Loop through list of event objects
-		for event in pygame.event.get():
-			if event.type == pygame.QUIT:
-				running = False
+	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+			running = False
 
-		# Blit surface object
-		display_surface.blit(dragon_left_img, dragon_left_rect)
-		display_surface.blit(dragon_right_img, dragon_right_rect)
+	# Blit surface object
+	display_surface.blit(dragon_left_img, dragon_left_rect)
+	display_surface.blit(dragon_right_img, dragon_right_rect)
 
-		pygame.draw.line(display_surface, (255,255,255), (0, 75), (WINDOW_WIDTH, 75), 4)
+	pygame.draw.line(display_surface, (255,255,255), (0, 75), (WINDOW_WIDTH, 75), 4)
 
-		# Update the display
-		pygame.display.update()
+	# Update the display
+	pygame.display.update()
 				
 # End the game
 pygame.quit()

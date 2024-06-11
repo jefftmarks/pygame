@@ -13,10 +13,10 @@ pygame.display.set_caption("Hello World")
 running = True
 while running:
     # Loop through list of event objects
-		for event in pygame.event.get():
-			print(event)
-			if event.type == pygame.QUIT:
-				running = False
+	for event in pygame.event.get():
+		print(event)
+		if event.type == pygame.QUIT:
+			running = False
 				
 # End the game
 pygame.quit()
