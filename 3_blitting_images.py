@@ -28,7 +28,7 @@ while running:
 			if event.type == pygame.QUIT:
 				running = False
 
-		# Blut surface object
+		# Blit surface object
 		display_surface.blit(dragon_left_img, dragon_left_rect)
 		display_surface.blit(dragon_right_img, dragon_right_rect)
 
